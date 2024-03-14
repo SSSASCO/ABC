@@ -2,7 +2,7 @@
 SELECT DISTINCT (ID_PuntoVenta) AS 'VISTAS CREACIÓN' FROM INVENTARIO_MOVIMIENTOS WHERE Fecha BETWEEN DATEADD(SECOND, -1, DATEADD(DAY, DATEDIFF(DAY, 0, DATEADD(MONTH, -3, GETDATE())) + 1, 0)) AND DATEADD(day, -1, DATEADD(DAY, DATEDIFF(DAY, 0, GETDATE()) + 1, 0)) AND Movimiento = 'FACTURA POS' OR Movimiento = 'FACTURA INSTITUCIONAL' 
 
 
---[GENERAL]--------------------------------------------------------------------------------
+--[GENERAL]-------------------------------------------------------------------------------se hizo cambio
 
 ALTER VIEW ClasificacionABCprecios AS 
 SELECT 
